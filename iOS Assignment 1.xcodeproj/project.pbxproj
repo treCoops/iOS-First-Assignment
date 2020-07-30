@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		2656834724BF3E36005D1430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656834624BF3E36005D1430 /* AppDelegate.swift */; };
 		2656834924BF3E36005D1430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656834824BF3E36005D1430 /* SceneDelegate.swift */; };
-		2656834B24BF3E36005D1430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656834A24BF3E36005D1430 /* ViewController.swift */; };
+		2656834B24BF3E36005D1430 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656834A24BF3E36005D1430 /* SignUp.swift */; };
 		2656834E24BF3E36005D1430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2656834C24BF3E36005D1430 /* Main.storyboard */; };
 		2656835024BF3E37005D1430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2656834F24BF3E37005D1430 /* Assets.xcassets */; };
 		2656835324BF3E37005D1430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2656835124BF3E37005D1430 /* LaunchScreen.storyboard */; };
 		2656835E24BF3E37005D1430 /* iOS_Assignment_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656835D24BF3E37005D1430 /* iOS_Assignment_1Tests.swift */; };
 		2656836924BF3E37005D1430 /* iOS_Assignment_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656836824BF3E37005D1430 /* iOS_Assignment_1UITests.swift */; };
+		2684A46624BF70B8000D80F3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684A46524BF70B8000D80F3 /* GradientView.swift */; };
+		2684A46924C00E69000D80F3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684A46824C00E69000D80F3 /* RoundButton.swift */; };
+		2684A46B24C014DC000D80F3 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684A46A24C014DC000D80F3 /* BorderedButton.swift */; };
+		2684A47324C0446D000D80F3 /* UITextFieldLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684A47224C0446D000D80F3 /* UITextFieldLine.swift */; };
+		2684A47824C05826000D80F3 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2684A47724C05826000D80F3 /* CircleButton.swift */; };
+		26F4BA4124C6DA6D002BA886 /* BioDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4BA4024C6DA6D002BA886 /* BioDataController.swift */; };
+		26F4BA4324C6DAD4002BA886 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4BA4224C6DAD4002BA886 /* EmailController.swift */; };
+		26F4BA4524C6DB0C002BA886 /* PasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4BA4424C6DB0C002BA886 /* PasswordController.swift */; };
+		26F4BA4724C6DEA2002BA886 /* BirthdayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4BA4624C6DEA2002BA886 /* BirthdayController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,7 @@
 		2656834324BF3E36005D1430 /* iOS Assignment 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Assignment 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2656834624BF3E36005D1430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2656834824BF3E36005D1430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2656834A24BF3E36005D1430 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2656834A24BF3E36005D1430 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		2656834D24BF3E36005D1430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2656834F24BF3E37005D1430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2656835224BF3E37005D1430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,15 @@
 		2656836424BF3E37005D1430 /* iOS Assignment 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Assignment 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2656836824BF3E37005D1430 /* iOS_Assignment_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Assignment_1UITests.swift; sourceTree = "<group>"; };
 		2656836A24BF3E37005D1430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2684A46524BF70B8000D80F3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		2684A46824C00E69000D80F3 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		2684A46A24C014DC000D80F3 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		2684A47224C0446D000D80F3 /* UITextFieldLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldLine.swift; sourceTree = "<group>"; };
+		2684A47724C05826000D80F3 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		26F4BA4024C6DA6D002BA886 /* BioDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioDataController.swift; sourceTree = "<group>"; };
+		26F4BA4224C6DAD4002BA886 /* EmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
+		26F4BA4424C6DB0C002BA886 /* PasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordController.swift; sourceTree = "<group>"; };
+		26F4BA4624C6DEA2002BA886 /* BirthdayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +117,11 @@
 		2656834524BF3E36005D1430 /* iOS Assignment 1 */ = {
 			isa = PBXGroup;
 			children = (
+				2684A47424C04A3A000D80F3 /* Controller */,
+				2684A46724C00E37000D80F3 /* UIClass */,
+				2656837624BF4362005D1430 /* Gradient */,
 				2656834624BF3E36005D1430 /* AppDelegate.swift */,
 				2656834824BF3E36005D1430 /* SceneDelegate.swift */,
-				2656834A24BF3E36005D1430 /* ViewController.swift */,
 				2656834C24BF3E36005D1430 /* Main.storyboard */,
 				2656834F24BF3E37005D1430 /* Assets.xcassets */,
 				2656835124BF3E37005D1430 /* LaunchScreen.storyboard */,
@@ -126,6 +146,37 @@
 				2656836A24BF3E37005D1430 /* Info.plist */,
 			);
 			path = "iOS Assignment 1UITests";
+			sourceTree = "<group>";
+		};
+		2656837624BF4362005D1430 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				2684A46524BF70B8000D80F3 /* GradientView.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		2684A46724C00E37000D80F3 /* UIClass */ = {
+			isa = PBXGroup;
+			children = (
+				2684A46824C00E69000D80F3 /* RoundButton.swift */,
+				2684A46A24C014DC000D80F3 /* BorderedButton.swift */,
+				2684A47224C0446D000D80F3 /* UITextFieldLine.swift */,
+				2684A47724C05826000D80F3 /* CircleButton.swift */,
+			);
+			path = UIClass;
+			sourceTree = "<group>";
+		};
+		2684A47424C04A3A000D80F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2656834A24BF3E36005D1430 /* SignUp.swift */,
+				26F4BA4024C6DA6D002BA886 /* BioDataController.swift */,
+				26F4BA4224C6DAD4002BA886 /* EmailController.swift */,
+				26F4BA4424C6DB0C002BA886 /* PasswordController.swift */,
+				26F4BA4624C6DEA2002BA886 /* BirthdayController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2656834B24BF3E36005D1430 /* ViewController.swift in Sources */,
+				26F4BA4324C6DAD4002BA886 /* EmailController.swift in Sources */,
+				2656834B24BF3E36005D1430 /* SignUp.swift in Sources */,
+				26F4BA4724C6DEA2002BA886 /* BirthdayController.swift in Sources */,
+				2684A46924C00E69000D80F3 /* RoundButton.swift in Sources */,
+				2684A46B24C014DC000D80F3 /* BorderedButton.swift in Sources */,
+				26F4BA4124C6DA6D002BA886 /* BioDataController.swift in Sources */,
+				2684A47824C05826000D80F3 /* CircleButton.swift in Sources */,
 				2656834724BF3E36005D1430 /* AppDelegate.swift in Sources */,
+				2684A46624BF70B8000D80F3 /* GradientView.swift in Sources */,
+				2684A47324C0446D000D80F3 /* UITextFieldLine.swift in Sources */,
+				26F4BA4524C6DB0C002BA886 /* PasswordController.swift in Sources */,
 				2656834924BF3E36005D1430 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

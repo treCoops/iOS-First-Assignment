@@ -1,24 +1,755 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dxu-dj-chL">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController title="Home Controller" id="BYZ-38-t0r" customClass="SignUp" customModule="iOS_Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="iOS_Assignment_1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="JpW-NG-WYT">
+                                <rect key="frame" x="30" y="55" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9Dd-k4-1Eb"/>
+                                    <constraint firstAttribute="height" constant="50" id="eB1-2F-iyP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Airbnb." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTs-Ur-4SE">
+                                <rect key="frame" x="30" y="140" width="315" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56o-VZ-ELN" customClass="RoundButton" customModule="iOS_Assignment_1" customModuleProvider="target">
+                                <rect key="frame" x="30" y="232.5" width="315" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="upR-wb-wbK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <state key="normal" title="Continue with Google">
+                                    <color key="titleColor" red="0.059852920189999999" green="0.62147986330000005" blue="0.71254280820000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google" translatesAutoresizingMaskIntoConstraints="NO" id="Viz-Qr-Utm">
+                                <rect key="frame" x="47" y="249.5" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="6hr-Tw-aoT"/>
+                                    <constraint firstAttribute="width" constant="16" id="g4d-kJ-5G0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qg-YN-YgZ">
+                                <rect key="frame" x="30" y="377.5" width="315" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgm-Y5-8a2">
+                                <rect key="frame" x="30" y="517" width="315" height="70"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="By signing up, I agree to Airbnb's ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Terms of Service.">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Non-Discrimination Policy, Payments Terms of Service.">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Policy,">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Guest Refund Policy,">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Host Guarantee Terms.">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.12053999999999999" green="0.12284" blue="0.14130999999999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="29.649999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="29.649999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="288.75">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYU-ok-Hef" customClass="BorderedButton" customModule="iOS_Assignment_1" customModuleProvider="target">
+                                <rect key="frame" x="30" y="297.5" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9cf-z0-Jxg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2n3-QY-OJO" kind="show" id="H33-Pf-Ifh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56o-VZ-ELN" secondAttribute="trailing" constant="30" id="0xL-BV-BA0"/>
+                            <constraint firstItem="RYU-ok-Hef" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7sp-YX-O4J"/>
+                            <constraint firstItem="Bgm-Y5-8a2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="CQK-tE-DUa"/>
+                            <constraint firstItem="56o-VZ-ELN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="DVz-Jk-HQ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bgm-Y5-8a2" secondAttribute="trailing" constant="30" id="FDu-pz-28h"/>
+                            <constraint firstItem="wTs-Ur-4SE" firstAttribute="top" secondItem="JpW-NG-WYT" secondAttribute="bottom" constant="35" id="KyJ-aH-F0j"/>
+                            <constraint firstItem="56o-VZ-ELN" firstAttribute="top" secondItem="wTs-Ur-4SE" secondAttribute="bottom" constant="60" id="QTS-Q6-KU0"/>
+                            <constraint firstItem="wTs-Ur-4SE" firstAttribute="leading" secondItem="JpW-NG-WYT" secondAttribute="leading" id="VeO-A6-2Zc"/>
+                            <constraint firstItem="wTs-Ur-4SE" firstAttribute="trailing" secondItem="56o-VZ-ELN" secondAttribute="trailing" id="bH9-GD-qBr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RYU-ok-Hef" secondAttribute="trailing" constant="30" id="dcw-YV-m6C"/>
+                            <constraint firstItem="JpW-NG-WYT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="hfT-wS-q8G"/>
+                            <constraint firstItem="Viz-Qr-Utm" firstAttribute="top" secondItem="wTs-Ur-4SE" secondAttribute="bottom" constant="77" id="qC5-bG-3Cb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1qg-YN-YgZ" secondAttribute="trailing" constant="30" id="rJ9-0M-xj8"/>
+                            <constraint firstItem="1qg-YN-YgZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="riF-Tl-h6k"/>
+                            <constraint firstItem="Viz-Qr-Utm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="ryQ-fi-nGb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bgm-Y5-8a2" secondAttribute="bottom" constant="60" id="sRJ-4M-nSp"/>
+                            <constraint firstItem="1qg-YN-YgZ" firstAttribute="top" secondItem="RYU-ok-Hef" secondAttribute="bottom" constant="30" id="tWY-xr-LrY"/>
+                            <constraint firstItem="RYU-ok-Hef" firstAttribute="top" secondItem="56o-VZ-ELN" secondAttribute="bottom" constant="15" id="xF7-2N-Dbf"/>
+                            <constraint firstItem="JpW-NG-WYT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="y2V-eu-13b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" colorLabel="IBBuiltInLabel-Red"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.058823529411764705" green="0.61960784313725492" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.0" green="0.30951045443862479" blue="0.34439159867714214" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="wDH-Tx-HjC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="83" y="-867"/>
+        </scene>
+        <!--Bio Data Controller-->
+        <scene sceneID="ypC-kS-8cW">
+            <objects>
+                <viewController id="2n3-QY-OJO" customClass="BioDataController" customModule="iOS_Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PdX-ze-UgN" customClass="GradientView" customModule="iOS_Assignment_1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UX-jg-z7e">
+                                <rect key="frame" x="30" y="70" width="315" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06W-Ox-Oar">
+                                <rect key="frame" x="30" y="172" width="315" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uso-r1-fef" customClass="UITextFieldLine" customModule="iOS_Assignment_1" customModuleProvider="target">
+                                <rect key="frame" x="30" y="223" width="315" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="linesColor">
+                                        <color key="value" red="0.5" green="0.78295532726261718" blue="0.69642921424891846" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rightLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLine" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-n2-tv0">
+                                <rect key="frame" x="30" y="285" width="315" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePk-GG-OsY" customClass="UITextFieldLine" customModule="iOS_Assignment_1" customModuleProvider="target">
+                                <rect key="frame" x="30" y="336" width="315" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="linesColor">
+                                        <color key="value" red="0.5" green="0.78295532729999995" blue="0.69642921420000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rightLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLine" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRv-KW-pxj">
+                                <rect key="frame" x="300" y="582" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5I7-ud-S0c"/>
+                                    <constraint firstAttribute="width" constant="50" id="twI-D7-4YR"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <segue destination="XAz-sZ-jQV" kind="show" id="yWr-Kh-wWx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstItem="ePk-GG-OsY" firstAttribute="top" secondItem="7CQ-n2-tv0" secondAttribute="bottom" constant="30" id="1b0-bu-5jW"/>
+                            <constraint firstItem="LhZ-Ic-DlR" firstAttribute="trailing" secondItem="uso-r1-fef" secondAttribute="trailing" constant="30" id="5B4-Pu-mRD"/>
+                            <constraint firstItem="LhZ-Ic-DlR" firstAttribute="trailing" secondItem="7UX-jg-z7e" secondAttribute="trailing" constant="30" id="BuZ-g1-EWI"/>
+                            <constraint firstItem="7UX-jg-z7e" firstAttribute="top" secondItem="LhZ-Ic-DlR" secondAttribute="top" constant="70" id="Iyk-f7-czj"/>
+                            <constraint firstItem="7CQ-n2-tv0" firstAttribute="leading" secondItem="LhZ-Ic-DlR" secondAttribute="leading" constant="30" id="O6c-DF-hFS"/>
+                            <constraint firstItem="LhZ-Ic-DlR" firstAttribute="bottom" secondItem="CRv-KW-pxj" secondAttribute="bottom" constant="15" id="RPT-nd-7Tc"/>
+                            <constraint firstItem="uso-r1-fef" firstAttribute="leading" secondItem="LhZ-Ic-DlR" secondAttribute="leading" constant="30" id="YSx-li-Bhb"/>
+                            <constraint firstItem="LhZ-Ic-DlR" firstAttribute="trailing" secondItem="CRv-KW-pxj" secondAttribute="trailing" constant="25" id="df9-s5-q4R"/>
+                            <constraint firstItem="LhZ-Ic-DlR" firstAttribute="trailing" secondItem="ePk-GG-OsY" secondAttribute="trailing" constant="30" id="g5Q-5f-1n3"/>
+                            <constraint firstItem="LhZ-Ic-DlR" firstAttribute="trailing" secondItem="06W-Ox-Oar" secondAttribute="trailing" constant="30" id="jPG-Xl-zG2"/>
+                            <constraint firstItem="06W-Ox-Oar" firstAttribute="leading" secondItem="LhZ-Ic-DlR" secondAttribute="leading" constant="30" id="jwF-Is-5jF"/>
+                            <constraint firstItem="06W-Ox-Oar" firstAttribute="top" secondItem="7UX-jg-z7e" secondAttribute="bottom" constant="60" id="nOg-RK-Cjw"/>
+                            <constraint firstItem="uso-r1-fef" firstAttribute="top" secondItem="06W-Ox-Oar" secondAttribute="bottom" constant="30" id="sZ2-ob-n1k"/>
+                            <constraint firstItem="ePk-GG-OsY" firstAttribute="leading" secondItem="LhZ-Ic-DlR" secondAttribute="leading" constant="30" id="tGu-HN-lz1"/>
+                            <constraint firstItem="7CQ-n2-tv0" firstAttribute="top" secondItem="uso-r1-fef" secondAttribute="bottom" constant="40" id="tSi-T8-KD5"/>
+                            <constraint firstItem="LhZ-Ic-DlR" firstAttribute="trailing" secondItem="7CQ-n2-tv0" secondAttribute="trailing" constant="30" id="uGp-hx-acc"/>
+                            <constraint firstItem="7UX-jg-z7e" firstAttribute="leading" secondItem="LhZ-Ic-DlR" secondAttribute="leading" constant="30" id="v8W-h5-Rw0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LhZ-Ic-DlR"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.058823529409999999" green="0.61960784310000006" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.0" green="0.30951045440000002" blue="0.34439159870000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="d6P-JN-bgH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-QQ-fEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828.98550724637687" y="-867.1875"/>
+        </scene>
+        <!--Email Controller-->
+        <scene sceneID="7Et-YQ-LGV">
+            <objects>
+                <viewController id="XAz-sZ-jQV" customClass="EmailController" customModule="iOS_Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tTv-D3-1qe" customClass="GradientView" customModule="iOS_Assignment_1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And, your email?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKD-vN-t67">
+                                <rect key="frame" x="30" y="70" width="315" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa1-HU-uSk">
+                                <rect key="frame" x="30" y="172" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ju-qY-b6o" customClass="UITextFieldLine" customModule="iOS_Assignment_1" customModuleProvider="target">
+                                <rect key="frame" x="30" y="232.5" width="315" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="linesColor">
+                                        <color key="value" red="0.5" green="0.78295532729999995" blue="0.69642921420000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rightLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLine" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rx-4E-Pgf">
+                                <rect key="frame" x="300" y="582" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Neg-L4-vQc"/>
+                                    <constraint firstAttribute="width" constant="50" id="P9M-FI-nlf"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <segue destination="7J1-VW-88y" kind="show" id="3lj-m8-lHW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstItem="0ju-qY-b6o" firstAttribute="top" secondItem="Fa1-HU-uSk" secondAttribute="bottom" constant="40" id="1YP-oC-RHm"/>
+                            <constraint firstItem="7BV-DD-EAU" firstAttribute="trailing" secondItem="Fa1-HU-uSk" secondAttribute="trailing" constant="30" id="CD3-8p-c8z"/>
+                            <constraint firstItem="0ju-qY-b6o" firstAttribute="leading" secondItem="7BV-DD-EAU" secondAttribute="leading" constant="30" id="Cdl-V8-pn0"/>
+                            <constraint firstItem="7BV-DD-EAU" firstAttribute="trailing" secondItem="0ju-qY-b6o" secondAttribute="trailing" constant="30" id="S5x-JE-fgJ"/>
+                            <constraint firstItem="7BV-DD-EAU" firstAttribute="bottom" secondItem="1rx-4E-Pgf" secondAttribute="bottom" constant="15" id="SPA-1w-J7n"/>
+                            <constraint firstItem="7BV-DD-EAU" firstAttribute="trailing" secondItem="1rx-4E-Pgf" secondAttribute="trailing" constant="25" id="TH6-oX-0KI"/>
+                            <constraint firstItem="Fa1-HU-uSk" firstAttribute="leading" secondItem="7BV-DD-EAU" secondAttribute="leading" constant="30" id="UJh-bc-fXl"/>
+                            <constraint firstItem="nKD-vN-t67" firstAttribute="top" secondItem="7BV-DD-EAU" secondAttribute="top" constant="70" id="ho1-nl-TAR"/>
+                            <constraint firstItem="nKD-vN-t67" firstAttribute="leading" secondItem="7BV-DD-EAU" secondAttribute="leading" constant="30" id="jJ8-Rd-5Nx"/>
+                            <constraint firstItem="7BV-DD-EAU" firstAttribute="trailing" secondItem="nKD-vN-t67" secondAttribute="trailing" constant="30" id="pu7-Wr-cAH"/>
+                            <constraint firstItem="Fa1-HU-uSk" firstAttribute="top" secondItem="nKD-vN-t67" secondAttribute="bottom" constant="60" id="sMi-u2-Q2S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7BV-DD-EAU"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.059852920189999999" green="0.62147986330000005" blue="0.71254280820000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.0" green="0.30951045440000002" blue="0.34439159870000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="0r0-uL-aA9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMa-fy-uCl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1570.4000000000001" y="-867.61619190404804"/>
+        </scene>
+        <!--Password Controller-->
+        <scene sceneID="bPS-HZ-kxR">
+            <objects>
+                <viewController id="7J1-VW-88y" customClass="PasswordController" customModule="iOS_Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ggp-OZ-1IH" customClass="GradientView" customModule="iOS_Assignment_1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-LK-tSu">
+                                <rect key="frame" x="30" y="60" width="315" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password must include at least one symbol and be 8 or more characters long." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTz-eG-yCJ">
+                                <rect key="frame" x="30" y="134" width="315" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJy-dm-dpS">
+                                <rect key="frame" x="300" y="582" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="klk-93-Fdx"/>
+                                    <constraint firstAttribute="width" constant="50" id="ztN-Fx-2gM"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <segue destination="WDQ-4I-I4p" kind="show" id="b0a-Kg-UyX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3b2-eK-ufa">
+                                <rect key="frame" x="30" y="271" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2o-qM-E3f">
+                                <rect key="frame" x="291" y="273.5" width="54" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="xJg-bl-hyE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="SHOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_show:" destination="7J1-VW-88y" eventType="touchUpInside" id="lAL-G2-Thv"/>
+                                    <action selector="btn_show:" destination="59v-31-cwH" eventType="touchUpInside" id="pLn-4U-cKl"/>
+                                    <action selector="btn_show:forEvent:" destination="59v-31-cwH" eventType="touchUpInside" id="KAe-PY-SEi"/>
+                                    <action selector="show:forEvent:" destination="59v-31-cwH" eventType="touchUpInside" id="hc7-I3-NRd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="abc" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDO-Xf-pkp" userLabel="password" customClass="UITextFieldLine" customModule="iOS_Assignment_1" customModuleProvider="target">
+                                <rect key="frame" x="30" y="332" width="315" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" label="aasd"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="dVX-J2-sn0"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="linesColor">
+                                        <color key="value" red="0.5" green="0.78295532729999995" blue="0.69642921420000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rightLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLine" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstItem="ZAp-5h-s9Q" firstAttribute="bottom" secondItem="zJy-dm-dpS" secondAttribute="bottom" constant="15" id="0KF-Iy-fzj"/>
+                            <constraint firstItem="ZAp-5h-s9Q" firstAttribute="trailing" secondItem="SLW-LK-tSu" secondAttribute="trailing" constant="30" id="CLP-Pi-jdF"/>
+                            <constraint firstItem="ZAp-5h-s9Q" firstAttribute="trailing" secondItem="KTz-eG-yCJ" secondAttribute="trailing" constant="30" id="ES1-Vp-Kk7"/>
+                            <constraint firstItem="KTz-eG-yCJ" firstAttribute="top" secondItem="SLW-LK-tSu" secondAttribute="bottom" constant="32" id="FtV-th-jyN"/>
+                            <constraint firstItem="VDO-Xf-pkp" firstAttribute="leading" secondItem="ZAp-5h-s9Q" secondAttribute="leading" constant="30" id="Hle-vF-6Xe"/>
+                            <constraint firstItem="ZAp-5h-s9Q" firstAttribute="trailing" secondItem="zJy-dm-dpS" secondAttribute="trailing" constant="25" id="IKF-KP-4x5"/>
+                            <constraint firstItem="KTz-eG-yCJ" firstAttribute="leading" secondItem="ZAp-5h-s9Q" secondAttribute="leading" constant="30" id="P7J-WP-7qB"/>
+                            <constraint firstItem="ZAp-5h-s9Q" firstAttribute="trailing" secondItem="R2o-qM-E3f" secondAttribute="trailing" constant="30" id="R4g-1P-V7X"/>
+                            <constraint firstItem="R2o-qM-E3f" firstAttribute="leading" secondItem="3b2-eK-ufa" secondAttribute="trailing" constant="163" id="Seb-yW-3xc"/>
+                            <constraint firstItem="ZAp-5h-s9Q" firstAttribute="trailing" secondItem="VDO-Xf-pkp" secondAttribute="trailing" constant="30" id="XP0-mJ-aQO"/>
+                            <constraint firstItem="R2o-qM-E3f" firstAttribute="leading" secondItem="3b2-eK-ufa" secondAttribute="trailing" constant="163" id="cqN-UQ-T6n"/>
+                            <constraint firstItem="SLW-LK-tSu" firstAttribute="leading" secondItem="ZAp-5h-s9Q" secondAttribute="leading" constant="30" id="eZF-dF-xrW"/>
+                            <constraint firstItem="3b2-eK-ufa" firstAttribute="leading" secondItem="ZAp-5h-s9Q" secondAttribute="leading" constant="30" id="etX-dj-gOe"/>
+                            <constraint firstItem="R2o-qM-E3f" firstAttribute="top" secondItem="KTz-eG-yCJ" secondAttribute="bottom" constant="60.5" id="lfH-Ki-YUR"/>
+                            <constraint firstItem="SLW-LK-tSu" firstAttribute="top" secondItem="ZAp-5h-s9Q" secondAttribute="top" constant="60" id="n8d-3P-Iz3"/>
+                            <constraint firstItem="3b2-eK-ufa" firstAttribute="top" secondItem="KTz-eG-yCJ" secondAttribute="bottom" constant="58" id="wlV-wu-B8Z"/>
+                            <constraint firstItem="VDO-Xf-pkp" firstAttribute="top" secondItem="3b2-eK-ufa" secondAttribute="bottom" constant="40" id="xF4-y7-MVn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZAp-5h-s9Q"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.059852920189999999" green="0.62147986330000005" blue="0.71254280820000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.0" green="0.30951045440000002" blue="0.34439159870000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="SF2-I6-vsz"/>
+                    <connections>
+                        <outlet property="txt_password" destination="VDO-Xf-pkp" id="O3e-88-bEj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlz-27-DjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="59v-31-cwH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2298" y="-868"/>
+        </scene>
+        <!--Birthday Controller-->
+        <scene sceneID="WRo-MS-biY">
+            <objects>
+                <viewController id="WDQ-4I-I4p" customClass="BirthdayController" customModule="iOS_Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuu-sY-bq2" customClass="GradientView" customModule="iOS_Assignment_1" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When is your birthday?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iR-Je-dBV">
+                                <rect key="frame" x="30" y="60" width="315" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You must be atleast 18 years old to use Airbnb. Others won't see your birthday." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXg-Il-E6W">
+                                <rect key="frame" x="30" y="176" width="315" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIRTHDAY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZq-dr-hF0">
+                                <rect key="frame" x="30" y="295" width="315" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYa-KD-K36">
+                                <rect key="frame" x="300" y="582" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CH6-Ds-9x0"/>
+                                    <constraint firstAttribute="width" constant="50" id="eEF-Bk-sWR"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="GDL-vb-Zne"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROb-ob-Xa4" customClass="UITextFieldLine" customModule="iOS_Assignment_1" customModuleProvider="target">
+                                <rect key="frame" x="30" y="356" width="315" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLine" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="linesColor">
+                                        <color key="value" red="0.5" green="0.78295532729999995" blue="0.69642921420000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rightLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLine" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstItem="u6O-Tr-yjV" firstAttribute="trailing" secondItem="ROb-ob-Xa4" secondAttribute="trailing" constant="30" id="45H-AL-XkS"/>
+                            <constraint firstItem="JZq-dr-hF0" firstAttribute="top" secondItem="nXg-Il-E6W" secondAttribute="bottom" constant="40" id="IOe-EU-LTF"/>
+                            <constraint firstItem="nXg-Il-E6W" firstAttribute="leading" secondItem="u6O-Tr-yjV" secondAttribute="leading" constant="30" id="IQc-va-bnh"/>
+                            <constraint firstItem="u6O-Tr-yjV" firstAttribute="trailing" secondItem="PYa-KD-K36" secondAttribute="trailing" constant="25" id="K8v-D2-KUt"/>
+                            <constraint firstItem="JZq-dr-hF0" firstAttribute="leading" secondItem="u6O-Tr-yjV" secondAttribute="leading" constant="30" id="OHm-d3-X6s"/>
+                            <constraint firstItem="3iR-Je-dBV" firstAttribute="leading" secondItem="u6O-Tr-yjV" secondAttribute="leading" constant="30" id="ROC-7j-M7A"/>
+                            <constraint firstItem="u6O-Tr-yjV" firstAttribute="trailing" secondItem="3iR-Je-dBV" secondAttribute="trailing" constant="30" id="TuT-w8-usf"/>
+                            <constraint firstItem="nXg-Il-E6W" firstAttribute="top" secondItem="3iR-Je-dBV" secondAttribute="bottom" constant="32" id="XCe-5w-Ivh"/>
+                            <constraint firstItem="u6O-Tr-yjV" firstAttribute="bottom" secondItem="PYa-KD-K36" secondAttribute="bottom" constant="15" id="lNW-cz-Nb9"/>
+                            <constraint firstItem="u6O-Tr-yjV" firstAttribute="trailing" secondItem="nXg-Il-E6W" secondAttribute="trailing" constant="30" id="myt-wP-hb5"/>
+                            <constraint firstItem="ROb-ob-Xa4" firstAttribute="top" secondItem="JZq-dr-hF0" secondAttribute="bottom" constant="40" id="oRW-bD-3Hs"/>
+                            <constraint firstItem="3iR-Je-dBV" firstAttribute="top" secondItem="u6O-Tr-yjV" secondAttribute="top" constant="60" id="ojA-fU-IrN"/>
+                            <constraint firstItem="ROb-ob-Xa4" firstAttribute="leading" secondItem="u6O-Tr-yjV" secondAttribute="leading" constant="30" id="uCM-hP-daM"/>
+                            <constraint firstItem="u6O-Tr-yjV" firstAttribute="trailing" secondItem="JZq-dr-hF0" secondAttribute="trailing" constant="30" id="xna-nc-qX0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u6O-Tr-yjV"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.059852920189999999" green="0.62147986330000005" blue="0.71254280820000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.0" green="0.30951045440000002" blue="0.34439159870000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="xEh-F8-FLC"/>
+                    <connections>
+                        <outlet property="txt_birthday" destination="ROb-ob-Xa4" id="hoP-CQ-jgf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5au-66-k9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3019" y="-867"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pqL-TR-mpV">
+            <objects>
+                <navigationController id="dxu-dj-chL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UFZ-HT-5V9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.058823529409999999" green="0.61960784310000006" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ato-Xa-2jw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hka-8K-O1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636" y="-867"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="b0a-Kg-UyX"/>
+        <segue reference="GDL-vb-Zne"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="Back" width="128" height="128"/>
+        <image name="Google" width="128" height="128"/>
+        <image name="Logo" width="128" height="128"/>
+    </resources>
 </document>
